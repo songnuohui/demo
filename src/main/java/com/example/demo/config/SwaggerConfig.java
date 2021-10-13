@@ -18,21 +18,33 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 
+    /**
+     * 测试的接口
+     */
     @Bean
-    public Docket creatRestApi() {
+    public Docket testApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo())
-                .groupName("my test")
+                .apiInfo(apiInfo("test", "我的一些测试接口"))
+                .groupName("我的test分组")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.demo.controller"))                //当前包路径，控制器类包
+                .apis(RequestHandlerSelectors.basePackage("com.example.demo.controller.test"))                //当前包路径，控制器类包
                 .build();
     }
 
-    private ApiInfo apiInfo() {
+    @Bean
+    public Docket otherApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(apiInfo("other", "一些其他接口"))
+                .groupName("另外的分组")
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.example.demo.controller.other"))                //当前包路径，控制器类包
+                .build();
+    }
+
+    private ApiInfo apiInfo(String title, String description) {
         return new ApiInfoBuilder()
-                .title("我的demo")
-                .version("1.0")                //.contact(new Contact("song","http://localhost:8888","2758324196@qq.com"))
-                .description("Api描述")
+                .title(title)
+                .description(description)
                 .build();
     }
 }
