@@ -10,6 +10,14 @@ import java.lang.annotation.Target;
  *
  * @author SongNuoHui
  * @date 2021/10/13 15:48
+ * <p>
+ * 仅编译期：RetentionPolicy.SOURCE；
+ * 仅class文件：RetentionPolicy.CLASS；
+ * 运行期：RetentionPolicy.RUNTIME。
+ * <p>
+ * 仅编译期：RetentionPolicy.SOURCE；
+ * 仅class文件：RetentionPolicy.CLASS；
+ * 运行期：RetentionPolicy.RUNTIME。
  */
 
 /**
@@ -32,8 +40,8 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface Range {
 
-	int min() default 0;
+    int min() default 0;
 
-	int max() default 255;
+    int max() default 255;
 
 }
