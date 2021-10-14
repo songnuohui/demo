@@ -15,7 +15,7 @@ import lombok.experimental.Accessors;
  * 教师表
  * </p>
  *
- * @author song
+ * @author SongNuoHui
  * @since 2021-10-14
  */
 @Data

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * 课程表 服务实现类
  * </p>
  *
- * @author song
+ * @author SongNuoHui
  * @since 2021-10-14
  */
 @Service

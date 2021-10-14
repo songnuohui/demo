@@ -13,7 +13,7 @@ import lombok.experimental.Accessors;
  * 学生老师关系表
  * </p>
  *
- * @author song
+ * @author SongNuoHui
  * @since 2021-10-14
  */
 @Data
