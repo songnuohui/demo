@@ -3,7 +3,6 @@ package com.example.demo.controller.other;
 import com.example.demo.utils.R;
 import com.example.demo.utils.RichResult;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

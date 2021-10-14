@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.TeacherMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.Teacher">
+        <id column="t_id" property="tId" />
+        <result column="t_name" property="tName" />
+        <result column="t_sex" property="tSex" />
+        <result column="t_id_card" property="tIdCard" />
+        <result column="t_address" property="tAddress" />
+        <result column="t_job_time" property="tJobTime" />
+        <result column="t_edu_bg" property="tEduBg" />
+        <result column="t_gra_ins" property="tGraIns" />
+        <result column="t_phone" property="tPhone" />
+        <result column="t_course" property="tCourse" />
+        <result column="del_flag" property="delFlag" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        t_id, t_name, t_sex, t_id_card, t_address, t_job_time, t_edu_bg, t_gra_ins, t_phone, t_course, del_flag, create_time, update_time
+    </sql>
+
+</mapper>
