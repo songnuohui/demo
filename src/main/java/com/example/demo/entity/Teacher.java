@@ -57,8 +57,6 @@ public class Teacher implements Serializable {
 
     private String tPhone;
 
-    private String tCourse;
-
     private Boolean delFlag;
 
     /**

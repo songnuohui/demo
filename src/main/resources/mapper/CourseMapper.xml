@@ -5,6 +5,7 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.example.demo.entity.Course">
         <id column="c_id" property="cId" />
+        <result column="t_id" property="tId" />
         <result column="c_name" property="cName" />
         <result column="del_flag" property="delFlag" />
         <result column="create_time" property="createTime" />
@@ -13,7 +14,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        c_id, c_name, del_flag, create_time, update_time
+        c_id, t_id, c_name, del_flag, create_time, update_time
     </sql>
 
 </mapper>

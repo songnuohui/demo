@@ -32,6 +32,11 @@ public class Course implements Serializable {
     private String cId;
 
     /**
+     * 教师id
+     */
+    private String tId;
+
+    /**
      * 课程名
      */
     private String cName;
