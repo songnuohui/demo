@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2021-10-15
  */
 @Service
-public class TeaCourseServiceImpl extends ServiceImpl<TeaCourseMapper, TeaCourse> implements ITeaCourseService {
+public class ITeaCourseServiceImpl extends ServiceImpl<TeaCourseMapper, TeaCourse> implements ITeaCourseService {
 
 }

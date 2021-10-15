@@ -29,14 +29,11 @@ public class TestServiceImpl implements TestService {
     @Autowired
     protected HttpServletResponse response;
 
-    @Value("${ip.appcode}")
-    private String appCode;//code
+    private static final String appCode ="buy from the alicloud market ";//code
 
-    @Value("${ip.host}")
-    private String host;//地址
+    private static final String host = "https://ips.market.alicloudapi.com";//地址
 
-    @Value("${ip.path}")
-    private String path;//路径
+    private static  final String path = "/iplocaltion";//路径
 
     @Override
     public User setCookie() {
