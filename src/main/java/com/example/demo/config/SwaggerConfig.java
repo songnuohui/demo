@@ -41,6 +41,17 @@ public class SwaggerConfig {
                 .build();
     }
 
+    @Bean
+    public Docket businessApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(apiInfo("business", "一些业务接口"))
+                .groupName("业务分组")
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.example.demo.controller.business"))                //当前包路径，控制器类包
+                .build();
+    }
+
+
     private ApiInfo apiInfo(String title, String description) {
         return new ApiInfoBuilder()
                 .title(title)

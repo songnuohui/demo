@@ -45,7 +45,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.10</version>
+            <version>1.1.22</version>
         </dependency>
         <!-- 数据库驱动 -->
         <dependency>
@@ -83,14 +83,21 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.1.0</version>
+            <version>3.4.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator -->
+        <!-- mp自动生成 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.1.0</version>
+            <version>3.4.0</version>
+        </dependency>
+
+        <!-- mp分页插件 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.4.0</version>
         </dependency>
 
         <dependency>
@@ -102,7 +109,7 @@
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
-            <version> 2.3.31</version>
+            <version>2.3.31</version>
         </dependency>
 
 

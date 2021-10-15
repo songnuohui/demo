@@ -7,7 +7,6 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.experimental.Accessors;
 
 /**
  * <p>
@@ -19,7 +18,6 @@ import lombok.experimental.Accessors;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
 @TableName("tb_student")
 public class Student implements Serializable {
 

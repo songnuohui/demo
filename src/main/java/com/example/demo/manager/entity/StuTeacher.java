@@ -7,7 +7,6 @@ import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.experimental.Accessors;
 
 /**
  * <p>
@@ -19,7 +18,6 @@ import lombok.experimental.Accessors;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
 @TableName("tb_stu_teacher")
 public class StuTeacher implements Serializable {
 
