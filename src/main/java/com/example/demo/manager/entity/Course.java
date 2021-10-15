@@ -1,9 +1,9 @@
-package com.example.demo.entity;
+package com.example.demo.manager.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
+import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -11,7 +11,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 学生-教师关系表
+ * 课程表
  * </p>
  *
  * @author SongNuoHui
@@ -20,23 +20,21 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("tb_stu_teacher")
-public class StuTeacher implements Serializable {
+@TableName("tb_course")
+public class Course implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    /**
+     * 课程id
+     */
+    @TableId(value = "c_id", type = IdType.AUTO)
+    private String cId;
 
     /**
-     * 学生id
+     * 课程名
      */
-    private String stuId;
-
-    /**
-     * 教师id
-     */
-    private String teaId;
+    private String cName;
 
     /**
      * 0：未删除，1：已删除

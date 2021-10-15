@@ -1,6 +1,6 @@
-package com.example.demo.mapper;
+package com.example.demo.manager.mapper;
 
-import com.example.demo.entity.Course;
+import com.example.demo.manager.entity.Course;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

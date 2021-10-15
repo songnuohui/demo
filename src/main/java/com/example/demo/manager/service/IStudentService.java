@@ -1,6 +1,6 @@
-package com.example.demo.service;
+package com.example.demo.manager.service;
 
-import com.example.demo.entity.Student;
+import com.example.demo.manager.entity.Student;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

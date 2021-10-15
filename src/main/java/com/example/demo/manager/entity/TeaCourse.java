@@ -1,10 +1,9 @@
-package com.example.demo.entity;
+package com.example.demo.manager.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -12,7 +11,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 教师表
+ * 教师-课程表
  * </p>
  *
  * @author SongNuoHui
@@ -21,41 +20,23 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("tb_teacher")
-public class Teacher implements Serializable {
+@TableName("tb_tea_course")
+public class TeaCourse implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "t_id", type = IdType.AUTO)
-    private String tId;
-
-    private String tName;
-
-    private String tSex;
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
     /**
-     * 身份信息
+     * 教师id
      */
-    private String tIdCard;
-
-    private String tAddress;
+    private String teaId;
 
     /**
-     * 开始教学时间
+     * 课程id
      */
-    private LocalDate tJobTime;
-
-    /**
-     * 教育背景
-     */
-    private String tEduBg;
-
-    /**
-     * 毕业学校
-     */
-    private String tGraIns;
-
-    private String tPhone;
+    private String courseId;
 
     private Boolean delFlag;
 
