@@ -1,7 +1,7 @@
 package com.example.demo.controller.test;
 
-import com.example.demo.common.entity.IpResult;
-import com.example.demo.common.entity.User;
+import com.example.demo.common.request.IpResult;
+import com.example.demo.common.request.User;
 import com.example.demo.service.TestService;
 import com.example.demo.utils.R;
 import com.example.demo.utils.RichResult;

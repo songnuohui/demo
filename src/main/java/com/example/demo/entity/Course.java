@@ -15,7 +15,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author SongNuoHui
- * @since 2021-10-14
+ * @since 2021-10-15
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -30,11 +30,6 @@ public class Course implements Serializable {
      */
     @TableId(value = "c_id", type = IdType.AUTO)
     private String cId;
-
-    /**
-     * 教师id
-     */
-    private String tId;
 
     /**
      * 课程名

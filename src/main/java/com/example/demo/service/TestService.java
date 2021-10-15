@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.common.entity.IpResult;
-import com.example.demo.common.entity.User;
+import com.example.demo.common.request.IpResult;
+import com.example.demo.common.request.User;
 
 /**
  * @author SongNuoHui

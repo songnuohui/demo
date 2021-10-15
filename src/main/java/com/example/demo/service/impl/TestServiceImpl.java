@@ -1,8 +1,8 @@
 package com.example.demo.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.example.demo.common.entity.IpResult;
-import com.example.demo.common.entity.User;
+import com.example.demo.common.request.IpResult;
+import com.example.demo.common.request.User;
 import com.example.demo.common.exception.SuperCodeException;
 import com.example.demo.service.TestService;
 import lombok.extern.slf4j.Slf4j;

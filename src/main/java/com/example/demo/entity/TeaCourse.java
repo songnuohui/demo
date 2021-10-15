@@ -2,8 +2,8 @@ package com.example.demo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
-import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -11,7 +11,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 学生表
+ * 教师-课程表
  * </p>
  *
  * @author SongNuoHui
@@ -20,37 +20,23 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("tb_student")
-public class Student implements Serializable {
+@TableName("tb_tea_course")
+public class TeaCourse implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "s_id", type = IdType.AUTO)
-    private String sId;
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
     /**
-     * 名字
+     * 教师id
      */
-    private String sName;
+    private String teaId;
 
     /**
-     * 用户名
+     * 课程id
      */
-    private String sUserName;
-
-    /**
-     * 密码
-     */
-    private String sPass;
-
-    private String sSex;
-
-    /**
-     * 身份证
-     */
-    private String sIdCard;
-
-    private String sAddress;
+    private String courseId;
 
     private Boolean delFlag;
 

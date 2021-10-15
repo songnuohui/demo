@@ -1,8 +1,8 @@
 package com.example.demo.service.impl;
 
 import com.example.demo.common.abs.Test;
-import com.example.demo.common.entity.IpResult;
-import com.example.demo.common.entity.User;
+import com.example.demo.common.request.IpResult;
+import com.example.demo.common.request.User;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
