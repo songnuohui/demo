@@ -1,7 +1,11 @@
 package com.example.demo.manager.service;
 
-import com.example.demo.manager.entity.Student;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.example.demo.manager.entity.Student;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +17,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IStudentService extends IService<Student> {
 
+    List<Student> queryLimit(int startIndex, int pageSize);
+
+    int removeAll(Date from , Date to);
 }
