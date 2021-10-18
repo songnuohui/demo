@@ -66,6 +66,9 @@
         <language minSize="226" name="Java" />
       </Languages>
     </inspection_tool>
+    <inspection_tool class="IfStatementWithIdenticalBranches" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="myHighlightWhenLastStatementIsCall" value="false" />
+    </inspection_tool>
     <inspection_tool class="JavaDoc" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="TOP_LEVEL_CLASS_OPTIONS">
         <value>

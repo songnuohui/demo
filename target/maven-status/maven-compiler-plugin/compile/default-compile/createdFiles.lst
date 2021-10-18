@@ -27,6 +27,8 @@ com\example\demo\manager\entity\Teacher.class
 com\example\demo\test\thread\ReadAndWrite.class
 com\example\demo\test\thread\MyThread.class
 com\example\demo\test\thread\SyncAddThread.class
+com\example\demo\manager\controller\StudentController.class
+com\example\demo\service\impl\StudentServiceImpl$2.class
 com\example\demo\test\thread\ReadWriteLockTest$2.class
 com\example\demo\test\thread\ThreadSync.class
 com\example\demo\test\thread\DeadLock.class
@@ -34,6 +36,7 @@ com\example\demo\manager\service\impl\ITeaCourseServiceImpl.class
 com\example\demo\test\limit\TokenBucketLimiter.class
 com\example\demo\test\proxy\MyProxy.class
 com\example\demo\manager\service\impl\IStudentServiceImpl.class
+com\example\demo\manager\controller\StuTeacherController.class
 com\example\demo\test\Test$1.class
 com\example\demo\controller\business\TeaCourseController.class
 com\example\demo\controller\business\CourseController.class
@@ -43,6 +46,7 @@ com\example\demo\manager\service\impl\ITeacherServiceImpl.class
 com\example\demo\test\thread\WaitAndNotify.class
 com\example\demo\manager\entity\StuTeacher.class
 com\example\demo\service\impl\StudentServiceImpl$1.class
+com\example\demo\manager\controller\CourseController.class
 com\example\demo\test\thread\InterruptedThread.class
 com\example\demo\config\MyGenerator.class
 com\example\demo\test\thread\ThreadPool.class
@@ -71,6 +75,7 @@ com\example\demo\manager\mapper\StudentMapper.class
 com\example\demo\test\annotation\Person.class
 com\example\demo\test\thread\DecTeacherThread.class
 com\example\demo\service\StudentService.class
+com\example\demo\manager\controller\TeacherController.class
 com\example\demo\manager\mapper\TeaCourseMapper.class
 com\example\demo\utils\RichResult.class
 com\example\demo\manager\service\impl\ICourseServiceImpl.class
@@ -80,6 +85,7 @@ com\example\demo\test\thread\TaskQueue.class
 com\example\demo\manager\service\ITeacherService.class
 com\example\demo\controller\test\TestController.class
 com\example\demo\test\proxy\IHello.class
+com\example\demo\manager\pojo\StudentRequest.class
 com\example\demo\manager\service\ICourseService.class
 com\example\demo\DemoApplication.class
 com\example\demo\test\thread\SyncDecThread.class
@@ -101,5 +107,6 @@ com\example\demo\config\MyGenerator$2.class
 com\example\demo\test\thread\TestThread.class
 com\example\demo\controller\business\StuTeacherController.class
 com\example\demo\manager\mapper\CourseMapper.class
+com\example\demo\manager\controller\TeaCourseController.class
 com\example\demo\test\thread\TaskQueues.class
 com\example\demo\test\proxy\IHelloImpl.class

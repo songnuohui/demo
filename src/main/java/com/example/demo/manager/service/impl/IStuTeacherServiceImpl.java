@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author SongNuoHui
- * @since 2021-10-15
+ * @since 2021-10-18
  */
 @Service
 public class IStuTeacherServiceImpl extends ServiceImpl<StuTeacherMapper, StuTeacher> implements IStuTeacherService {

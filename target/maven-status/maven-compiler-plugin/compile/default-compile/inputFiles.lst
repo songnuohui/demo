@@ -2,6 +2,8 @@ D:\My\demo\src\main\java\com\example\demo\common\request\IpResult.java
 D:\My\demo\src\main\java\com\example\demo\test\TestOperators.java
 D:\My\demo\src\main\java\com\example\demo\common\request\TeaRequest.java
 D:\My\demo\src\main\java\com\example\demo\DemoApplication.java
+D:\My\demo\src\main\java\com\example\demo\manager\controller\StudentController.java
+D:\My\demo\src\main\java\com\example\demo\manager\controller\TeaCourseController.java
 D:\My\demo\src\main\java\com\example\demo\manager\entity\Student.java
 D:\My\demo\src\main\java\com\example\demo\test\proxy\IHelloImpl.java
 D:\My\demo\src\main\java\com\example\demo\manager\mapper\TeaCourseMapper.java
@@ -24,6 +26,7 @@ D:\My\demo\src\main\java\com\example\demo\manager\entity\Course.java
 D:\My\demo\src\main\java\com\example\demo\test\thread\ReentrantLockTest.java
 D:\My\demo\src\main\java\com\example\demo\manager\mapper\StuTeacherMapper.java
 D:\My\demo\src\main\java\com\example\demo\manager\service\impl\IStuTeacherServiceImpl.java
+D:\My\demo\src\main\java\com\example\demo\manager\controller\CourseController.java
 D:\My\demo\src\main\java\com\example\demo\test\annotation\Range.java
 D:\My\demo\src\main\java\com\example\demo\test\proxy\IHello.java
 D:\My\demo\src\main\java\com\example\demo\common\handler\RequestMappingHandler.java
@@ -40,6 +43,7 @@ D:\My\demo\src\main\java\com\example\demo\test\limit\LeakyBucketLimiter.java
 D:\My\demo\src\main\java\com\example\demo\common\request\StuRequest.java
 D:\My\demo\src\main\java\com\example\demo\manager\entity\Teacher.java
 D:\My\demo\src\main\java\com\example\demo\manager\mapper\StudentMapper.java
+D:\My\demo\src\main\java\com\example\demo\manager\pojo\StudentRequest.java
 D:\My\demo\src\main\java\com\example\demo\service\impl\SonTest.java
 D:\My\demo\src\main\java\com\example\demo\common\exception\SuperCodeException.java
 D:\My\demo\src\main\java\com\example\demo\service\impl\TestServiceImpl.java
@@ -54,6 +58,7 @@ D:\My\demo\src\main\java\com\example\demo\service\TestService.java
 D:\My\demo\src\main\java\com\example\demo\manager\entity\StuTeacher.java
 D:\My\demo\src\main\java\com\example\demo\test\limit\TokenBucketLimiter.java
 D:\My\demo\src\main\java\com\example\demo\common\request\User.java
+D:\My\demo\src\main\java\com\example\demo\manager\controller\TeacherController.java
 D:\My\demo\src\main\java\com\example\demo\test\proxy\MyProxy.java
 D:\My\demo\src\main\java\com\example\demo\controller\business\CourseController.java
 D:\My\demo\src\main\java\com\example\demo\controller\business\TeacherController.java
@@ -63,4 +68,5 @@ D:\My\demo\src\main\java\com\example\demo\test\thread\ThreadSync.java
 D:\My\demo\src\main\java\com\example\demo\controller\test\TestController.java
 D:\My\demo\src\main\java\com\example\demo\test\annotation\AnnotationTest.java
 D:\My\demo\src\main\java\com\example\demo\test\thread\MethodSync.java
+D:\My\demo\src\main\java\com\example\demo\manager\controller\StuTeacherController.java
 D:\My\demo\src\main\java\com\example\demo\controller\other\TotalInterfaceController.java
