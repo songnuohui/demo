@@ -28,8 +28,8 @@ public class StudentServiceImpl implements StudentService {
 
     //定义线程
     private static final int CoreThreads = 10;
-    private static final int MaxThreads = 15;
-    private static final long KeepAliveTime = 30L;
+    private static final int MaxThreads = 20;
+    private static final long KeepAliveTime = 60L;
 
     @Override
     public List<List<Student>> multiThreadQuery() {

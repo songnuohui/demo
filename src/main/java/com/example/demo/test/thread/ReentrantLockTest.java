@@ -5,6 +5,7 @@ import lombok.var;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -19,6 +20,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class ReentrantLockTest {
     public static void main(String[] args) throws InterruptedException {
+        ConcurrentHashMap<Object, Object> objectObjectConcurrentHashMap = new ConcurrentHashMap<>();
         TaskQueues q = new TaskQueues();
         ArrayList<Thread> ts = new ArrayList<>();
         for (int i = 0; i < 5; i++) {

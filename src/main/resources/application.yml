@@ -20,4 +20,4 @@ mybatis-plus:
 logging:
   level:
     com.baomidou.mybatisplus: debug
-    com.example.demo.manager.mapper: debug
+    com.example.demo.manager.mapper: error
