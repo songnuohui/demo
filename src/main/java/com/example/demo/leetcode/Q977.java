@@ -48,7 +48,7 @@ public class Q977 {
     }
 
     public static void main(String[] args) {
-        int nums[]={-7,-3,2,3,11};
+        int[] nums ={-7,-3,2,3,11};
         Q977 q977 = new Q977();
         System.out.println(Arrays.toString(q977.sortedSquares(nums)));
     }
