@@ -1,8 +1,6 @@
 package com.example.demo.leetcode;
 
-import org.apache.commons.collections4.CollectionUtils;
-
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * 977 题

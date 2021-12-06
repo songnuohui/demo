@@ -1,39 +1,47 @@
 package com.example.demo.leetcode;
 
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.*;
+import java.util.stream.Collectors;
+
 /**
  * @author SongNuoHui
- * @date 2021/12/1 15:18
+ * @date 2021/12/6 17:48
  */
 public class Q3 {
     /**
-     * 二分查找
-     * 给定一个n个元素有序的（升序）整型数组nums 和一个目标值target ，写一个函数搜索nums中的 target，如果目标值存在返回下标，否则返回 -1。
+     * 3 题  滑动窗口
+     * 给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度
      * <p>
-     * 来源：力扣（LeetCode）
-     * 链接：https://leetcode-cn.com/problems/binary-search
-     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * 输入: s = "abcabcbb"
+     * 输出: 3
+     * 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
      */
-    public int search(int[] nums, int target) {
-        int left = 0;
-        int right = nums.length - 1;
 
-
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            if (nums[mid] > target) {
-                right = mid-1;
-            } else if (nums[mid] < target) {
-                left = mid+1;
-            } else {
-                return mid;
-            }
+    public int lengthOfLongestSubstring(String s) {
+        // 记录字符上一次出现的位置
+        int[] last = new int[128];
+        for(int i = 0; i < 128; i++) {
+            last[i] = -1;
         }
-        return -1;
+        int n = s.length();
+
+        int res = 0;
+        int start = 0; // 窗口开始位置
+        for(int i = 0; i < n; i++) {
+            int index = s.charAt(i);
+            start = Math.max(start, last[index] + 1);
+            res   = Math.max(res, i - start + 1);
+            last[index] = i;
+        }
+
+        return res;
     }
 
     public static void main(String[] args) {
-        int nums[] = {5};
+        String s = "bbbbbb";
         Q3 q3 = new Q3();
-        System.out.println(q3.search(nums, 5));
+        System.out.println(q3.lengthOfLongestSubstring(s));
     }
 }
