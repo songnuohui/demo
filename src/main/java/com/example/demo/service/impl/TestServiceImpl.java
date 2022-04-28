@@ -109,7 +109,7 @@ public class TestServiceImpl implements TestService {
         cookie.setVersion(1);
         cookie.setMaxAge(maxAge);
         cookie.setPath(path);
-        String domain = "127.0.0.1";
+        String domain = "localhost";
         cookie.setDomain(domain);
         try {
             //设置编码

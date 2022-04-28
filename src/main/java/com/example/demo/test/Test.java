@@ -1,34 +1,20 @@
 package com.example.demo.test;
 
-import com.example.demo.common.request.IpResult;
 import com.example.demo.common.request.User;
-import com.example.demo.service.impl.SonTest;
 import com.example.demo.service.TestService;
+import com.example.demo.service.impl.SonTest;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author SongNuoHui
  * @date 2021/9/14 9:41
  */
 public class Test {
+
+    @Autowired
+    private TestService testService;
+
     public static void main(String[] args) {
-        TestService testService = new TestService(){
-            @Override
-            public User setCookie() {
-                return null;
-            }
-
-            @Override
-            public IpResult getIpDetail(String ip) {
-                return null;
-            }
-
-            @Override
-            public String newInterface() {
-                return "hello word";
-            }
-        };
-        System.out.println(testService.newInterface());
-        System.out.println("----------------");
 
         SonTest sonTest = new SonTest();
         sonTest.setName("songnuohui");
@@ -37,9 +23,13 @@ public class Test {
         System.out.println(sonTest.testInterface());
         System.out.println(sonTest.testMethod());
         System.out.println(sonTest.newInterface());
+        System.out.println(sonTest.setCookie());
         System.out.println("----------------");
 
         com.example.demo.common.abs.Test test = new SonTest();
+        User user = test.setCookie();
+        System.out.println(user.toString());
+
         System.out.println(test.testMethod());
         System.out.println(test.testInterface());
         System.out.println(test.newInterface());

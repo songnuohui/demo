@@ -35,7 +35,7 @@ public class SonTest extends Test {
 
     @Override
     public User setCookie() {
-        return null;
+        return new User("设置子类","男",22,"1216546541");
     }
 
     @Override
